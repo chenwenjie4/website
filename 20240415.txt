@@ -1,0 +1,68 @@
+Character: integer valued information
+_______________________________________________________________________________________
+
+Character: integer valued information
+
+graphic or non-graphic.e.g character with code 5 represents a sound
+
+character: letter,digits,punctuation marks,signal,control signals,
+________________________________________________________________________________________
+
+code 'a' as binary signal:
+in storage media: more, less(many,few)There are only two states binary world,0,1
+________________________________________________________________________________________
+
+ASCII:
+American Standard Code for information interchange
+________________________________________________________________________________________
+
+Unicode: 2 bytes,16 bits,can represent 65536 different chars
+
+Interchange
+________________________________________________________________________________________
+
+String of characters: 
+Coded characters saved in consective storage
+________________________________________________________________________________________
+
+Mbps:million bits per second
+________________________________________________________________________________________
+
+search:
+ i = str.indexOF(target)
+e.g.
+ i = "abcde".indexOF("cd") return 2
+ 
+i = "abcde".indexOF("xy") return -1
+i = "abcde".indexOF ("cd",3) return -1
+the second parameter represents the starting position of searching
+________________________________________________________________________________________
+
+str.sibstring(s,e)
+s-----inclusive starting index
+s-----exclusive ending index
+"abcde".substring(1,3)--> bc
+
+str.charAt(i) == str.substring(i,i+1)
+
+str.length  gives the length of the str
+
+str.toUpperCase()
+str.toLowerCase()
+string is inmutable
+
+x + Y + z + w + u
+________________________________________________________________________________________
+
+str.split(/spliter/)
+spliter: regular expression such as |， [0-9],[a-z], "abc"
+
+var x = "abcde".split(/|/);-->
+["a", "b", "c", "d", "e"]
+x.join()---> "abcde"
+
+"abcde".splic(/c/) --->["ab", "de"]
+________________________________________________________________________________________
+
+str.replace(/reg/ig,'newstring')
+"abcdea".replace(/A/ig, "x")-->"abcdea"
